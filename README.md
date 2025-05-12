@@ -1,8 +1,8 @@
 # Product_inventory
-**About**
-- Like an inventory operation leader, I want an app that allows me to manage the inventory of my store in a dynamic way so I can make an efficient following of the available products, they're quantity and they're price, also it should calculate the total value
+## About
+Like an inventory operation leader, I want an app that allows me to manage the inventory of my store in a dynamic way so I can make an efficient following of the available products, they're quantity and they're price, also it should calculate the total value
 
-# Functions
+## Functions
 
 **Asked by the client**
 1. Adding function:
