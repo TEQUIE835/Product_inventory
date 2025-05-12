@@ -101,10 +101,23 @@ Amount: {prod["amount"]}
 #Clearing inventory function
 def clear_inventory():
     
-    #We just take the inventory and clear it
-    inv.clear()
-    print("\nInventory deleted succesfully")
-    return
+    while True:
+    #We make sure the user wants o do this
+        agree = str(input("Are you sure you want to clear inventory? (Y/N):  "))
+        if agree.lower().strip() == "y" or agree.lower().strip() == "yes":
+
+            #If the user agrees we delete all the elements in the inventory
+            inv.clear()
+            print("\nInventory deleted succesfully")
+            return
+        elif agree.lower().strip() == "n" or agree.lower().strip() == "no":
+
+            #If the user doesn't want to clear the inventory we just return it
+            return
+        else:
+
+            #If the user makes an uknown answer we ask him to try again
+            print("Please enter a valid option (N/Y or NO/YES)")
 
 #Exit function
 def exi():
